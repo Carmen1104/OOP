@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class ML1 {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
+        Scanner PrintArray = new Scanner(System.in);
 
         System.out.println("Enter the number of items: ");
-        int TItems = input.nextInt();
-        int [] items = new int[TItems];
+        int NUM_ITEMS = PrintArray.nextInt();
+        int [] items = new int[NUM_ITEMS];
 
         System.out.println("Enter the value of all items (seperated by space)");
         for (int i= 0; i < items.length; ++ i){
-            items[i] = input.nextInt();
+            items[i] = PrintArray.nextInt();
         }
 
         System.out.print("The values are: [");
